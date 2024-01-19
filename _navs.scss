@@ -1,0 +1,268 @@
+@import 'vars.scss';
+
+/*Navbar elements*/
+.navbar--primary{
+    display: flex;
+    justify-content: $spacing;
+    position: $positioning;
+    top:0;
+    width: 100%;
+    height: auto;
+    padding: $nav-padding;
+    padding-left: 10px;
+    background-color: $primary;
+    background-color: $navBg-color !important;
+    font-family: $accent-font;
+    font-size: $textSize;
+    color:white;
+    color:$textColor !important;
+    padding-right: 10px;
+
+    -webkit-box-shadow: 0px 14px 44px -23px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 14px 44px -23px rgba(66, 68, 90, 1);
+    box-shadow: 0px 14px 44px -23px rgba(66, 68, 90, 1);
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+        padding-right: 10px;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        transition: .3s;
+        &:hover{
+            
+            ul{
+                display: flex;
+                
+            }
+        }
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: right;
+        list-style-type: none;
+        margin-right: 20px;
+        
+        li{
+            
+            
+            padding: $hover_link-padding;
+            color:white;
+            color:$textColor !important;
+            border-radius: 5px;
+            transition: .3s ease;
+            &:hover{
+                background-color: $hover_link-bg;
+                cursor: pointer;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+    img{
+        display: none;
+        position: relative;
+        width: 32px;
+        height: 32px;
+        margin-left: auto; 
+    }
+}
+
+.navbar--secondary{
+    display: flex;
+    justify-content: $spacing;
+    position: $positioning;
+    top:0;
+    width: 100%;
+    height: auto;
+    padding: $nav-padding;
+    padding-left: 10px;
+    background-color: $secondary;
+    background-color: $navBg-color !important;
+    font-family: $accent-font;
+    color:white;
+    color:$textColor !important;
+    padding-right: 10px;
+    font-size: $textSize;
+    -webkit-box-shadow: 0px 14px 44px -23px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 14px 44px -23px rgba(66, 68, 90, 1);
+    box-shadow: 0px 14px 44px -23px rgba(66, 68, 90, 1);
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+        padding-right: 10px;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        transition: .3s;
+        &:hover{
+            
+            ul{
+                display: flex;
+                
+            }
+        }
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: right;
+        list-style-type: none;
+        margin-right: 20px;
+        
+        li{
+            
+            
+            padding: $hover_link-padding;
+            color:white;
+            color:$textColor !important;
+            border-radius: 5px;
+            transition: .3s ease;
+            &:hover{
+                background-color: $hover_link-bg;
+                cursor: pointer;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+    img{
+        display: none;
+        position: relative;
+        width: 32px;
+        height: 32px;
+        margin-left: auto; 
+    }
+}
+
+.navbar--accent{
+    display: flex;
+    justify-content: $spacing;
+    position: $positioning;
+    top:0;
+    width: 100%;
+    height: auto;
+    padding: $nav-padding;
+    padding-left: 10px;
+    background-color: $accent;
+    background-color: $navBg-color !important;
+    font-family: $accent-font;
+    color:white;
+    color:$textColor !important;
+    padding-right: 10px;
+    font-size: $textSize;
+    -webkit-box-shadow: 0px 14px 44px -23px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 14px 44px -23px rgba(66, 68, 90, 1);
+    box-shadow: 0px 14px 44px -23px rgba(66, 68, 90, 1);
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+        padding-right: 10px;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        transition: .3s;
+        &:hover{
+            
+            ul{
+                display: flex;
+                
+            }
+        }
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: right;
+        list-style-type: none;
+        margin-right: 20px;
+        
+        li{
+            
+            
+            padding: $hover_link-padding;
+            color:white;
+            color:$textColor !important;
+            border-radius: 5px;
+            transition: .3s ease;
+            &:hover{
+                background-color: $hover_link-bg;
+                cursor: pointer;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+    img{
+        display: none;
+        position: relative;
+        width: 32px;
+        height: 32px;
+        margin-left: auto; 
+    }
+}
+
+
+
+@media(max-width:768px){
+    .navbar--primary{
+        .dropdown{
+            ul{
+                display: none;
+                flex-direction: column;
+            }
+            img{
+                display: block;
+            }
+            &:hover{
+                background-color: $hover_link-bg;
+            }
+        }
+    }
+
+    .navbar--secondary{
+        .dropdown{
+            ul{
+                display: none;
+                flex-direction: column;
+            }
+            img{
+                display: block;
+            }
+            &:hover{
+                background-color: $hover_link-bg;
+            }
+        }
+    }
+    
+    .navbar--accent{
+        .dropdown{
+            ul{
+                display: none;
+                flex-direction: column;
+            }
+            img{
+                display: block;
+            }
+            &:hover{
+                background-color: $hover_link-bg;
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+
+@import 'navs';                        
+
+.CTA__button--gradientPS{
+    margin:10px;
+    font-weight: bold;
+    background-image: $linearPrimarySecondary;
+    padding: 12px 48px;
+    color: white;
+    border:2px solid orange;
+    -webkit-box-shadow: 8px 8px 83px -2px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 83px -2px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 83px -2px rgba(66, 68, 90, 1);
+    border-radius: 1rem;
+    transition: .3s;
+    &:hover{
+        color:black;
+        background-image: none;
+        background-color: white;
+        transform: scale(95%);
+    }
+    &:active{
+        background-color: pink;
+        transform: scale(85%);
+        -webkit-box-shadow: inset 8px 8px 83px -2px rgba(66, 68, 90, 1);
+        -moz-box-shadow: inset 8px 8px 83px -2px rgba(66, 68, 90, 1);
+        box-shadow: inset 8px 8px 83px -2px rgba(66, 68, 90, 1);
+    }
+}
+
+.CTA__button--gradientPA{
+    margin:10px;
+    font-weight: bold;
+    background-image: $linearPrimaryAccent;
+    padding: 12px 48px;
+    color: white;
+    border:2px solid orange;
+    -webkit-box-shadow: 8px 8px 83px -2px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 83px -2px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 83px -2px rgba(66, 68, 90, 1);
+    border-radius: 1rem;
+    transition: .3s;
+    &:hover{
+        color:black;
+        background-image: none;
+        background-color: white;
+        transform: scale(95%);
+    }
+    &:active{
+        background-color: pink;
+        transform: scale(85%);
+        -webkit-box-shadow: inset 8px 8px 83px -2px rgba(66, 68, 90, 1);
+        -moz-box-shadow: inset 8px 8px 83px -2px rgba(66, 68, 90, 1);
+        box-shadow: inset 8px 8px 83px -2px rgba(66, 68, 90, 1);
+    }
+}
+
+         
+.CTA__button--gradB {
+    background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    &:hover{
+        background-position: right center; 
+        color: #fff;
+        text-decoration: none;
+        transform: scale(85%);
+    }
+  }
+
+
+
+
+.CTA__button--glow {
+    padding: 15px 45px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: #1fd1f9;
+    background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+    transition: 500ms;
+    &:before{
+      transform: translateX(-50px) translateY(27px);
+      box-shadow: 5px 5px 16px #ca61ff;
+    }
+    &:after{
+        transform: translateX(-25px) translateY(27px);
+        box-shadow: -5px 5px 16px #1fd1f9;
+    }
+    &:hover:before{
+        height: 5px;
+    }
+    &:hover:after{
+        height: 5px;
+    }
+    &:hover{
+        box-shadow: inset 0px 5px 10px rgba(255,255,255,0.4);
+        transform: scale(85%);
+    }
+    &:focus{
+        outline:none;
+    }
+}
+
+  
+ 

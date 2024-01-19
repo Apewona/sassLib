@@ -1,0 +1,27 @@
+
+/* Main theme colors*/
+$text: #09030a;
+$background: #fbf3fb;
+$primary: #c64ac0;
+$secondary: #db8db2;
+$accent: #d37488;
+
+/* Main theme gradients*/
+$linearPrimarySecondary: linear-gradient(#c64ac0, #db8db2);
+$linearPrimaryAccent: linear-gradient(#c64ac0, #d37488);
+$linearSecondaryAccent: linear-gradient(#db8db2, #d37488);
+$radialPrimarySecondary: radial-gradient(#c64ac0, #db8db2);
+$radialPrimaryAccent: radial-gradient(#c64ac0, #d37488);
+$radialSecondaryAccent: radial-gradient(#db8db2, #d37488);
+
+
+/* Navbar variables*/
+$accent-font: 'Arial', sans-serif;  /*defines font for navbar elements*/
+$nav-padding: 10px;                 /*defines navbar padding*/
+$spacing: space-between;            /*defines flexbox justify-content property for navbar elements*/
+$positioning: none;                 /*defines navbar position: sticky / fixed / relative / absolute*/
+$navBg-color:none;                  /*defines user custom background color*/
+$textColor: none;                   /*defines text color of navbar elements*/
+$hover_link-bg: grey;             /*defines background color for hovered links*/
+$hover_link-padding: 12px 28px;     /*defines hover link size*/
+$textSize: normal;                  /*defines font size*/
